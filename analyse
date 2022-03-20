@@ -1,0 +1,97 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CMP1903M_Assessment_1_Base_Code
+{
+    public class Analyse
+    {
+        public void characters_counted(string userInput)
+        {
+            int character_count = 0;
+            char[] characters = new char[52] { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" };
+            foreach (char x in userInput)
+            {
+                if (characters.Contains(x))
+                {
+                    character_count++;
+                }
+            }
+            Console.WriteLine("The number of characters in this sentence is: ");
+            Console.WriteLine(character_count);
+
+        }
+        public void vowels_counted(string userInput)
+        {
+            int vowel_counted = 0;
+            char vowels = new char[5] { 'a', 'e`, `i`, `o`,`u`};
+                foreach (char x in userInput)
+            {
+
+                {
+                    vowel_counted++;
+                }
+            }
+            Console.WriteLine("the number of vowels in this sentence is: ");
+            Console.WriteLine(vowel_counted);
+        }
+        public void consonants_counted(string userInput)
+        {
+            int consonant_counted = 0;
+            char consonants = new char[21] { b`,`c`,`d`,`f`,`g`,`h`,`j`,`k`,`l`,`m`,`n`,`p`, q`,`r`,`s`,`t`,`v`,`x`,`z`,`w`,`y`};
+            foreach (char x in userInput)
+            {
+                consonant_counted++;
+            }
+
+            Console.WriteLine("the number of consonants in this sentence conatins: ");
+            Console.WriteLine(consonant_counted);
+        
+        }
+        public void uppercase_letters_counted(string UserInput)
+        {
+            char uppercase_letter_counted = new char[26] { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" };
+            foreach (char x in UserInput)
+            {
+                uppercase_letter_counted++;
+
+            }
+            Console.WriteLine("The number of uppercase letters in this program is: ");
+            Console.WriteLine(uppercase_letter_counted);
+
+        }
+        public void lowercase_letters_counted(string userInput)
+        {
+            int lowercase_letter_counted = 0;
+            char lowercase_letters = new char[26] { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" };
+            foreach (char x in userInput)
+
+            {
+                lowercase_letter_counted++;
+            }
+            Console.WriteLine("the number of lowercase letters in this sentence is");
+            Console.WriteLine(lowercase_letter_counted);
+        }
+        public void number_of_sentences_entered(string userInput)
+        {
+            int number_of_sentences_entered_by_user = 0;
+            char punctuation = new char[3] { "?", ".", "!" };
+            foreach (char x in userInput)
+            {
+                if (x == punctuation)
+                    number_of_sentences_entered_by_user++;
+            }
+            Console.WriteLine("The number of sentences in this text is: ");
+            Console.WriteLine(number_of_sentences_entered_by_user);
+        }
+        public void letter_frequence(string userInput)
+        {
+ 
+        }
+
+       }
+  }
+        
+    
