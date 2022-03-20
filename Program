@@ -1,0 +1,79 @@
+//Base code project for CMP1903M Assessment 1
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CMP1903M_Assessment_1_Base_Code
+{
+    public class input
+    {
+        static void Main(string[] args)
+        {
+            Input input = new Input();
+            Analyse analyse = new Analyse();
+            string sentence = "";
+            string file_chosen_path = "";
+            string users_chosen_choice = "";
+            bool valid_input = false;
+
+            try
+            {
+                do
+                {
+                    Console.WriteLine("would you like to either:  1. enter the sentence manually through the keyboard or 2. enter a text file instead or X if you want to leave this program");
+                    users_chosen_choice = Console.ReadLine();
+
+                    if (users_chosen_choice == "1")
+                    {
+                        sentence = input.manualTextInput();
+                        analyse.vowels_counted(sentence);
+                        analyse.consonants_counted(sentence);
+                        analyse.uppercase_letters_counted(sentence);
+                        analyse.lowercase_letters_counted(sentence);
+                        analyse.number_of_sentences_entered(sentence);
+                        analyse.letter_frequence(sentence);
+                        valid_input = true;
+                    }
+                    else if (users_chosen_choice == "2")
+                    {
+                        Console.WriteLine("please enter the text file that you would like to be anaysed");
+                        analyse.vowels_counted(sentence);
+                        analyse.consonants_counted(sentence);
+                        analyse.uppercase_letters_counted(sentence);
+                        analyse.lowercase_letters_counted(sentence);
+                        analyse.number_of_sentences_entered(sentence);
+                        analyse.letter_frequence(sentence);
+                        valid_input = true;
+                    }
+                    else if (users_chosen_choice == "X")
+                    {
+                        System.Environment.Exit(0);
+
+                    }
+
+                }
+                while (valid_input);
+
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("The format you have selected is invalid. Please try again");
+
+            }
+
+        }
+    }
+
+}
+
+
+
+
+            
+
+          
+
+           
+       
