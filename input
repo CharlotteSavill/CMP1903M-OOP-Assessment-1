@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CMP1903M_Assessment_1_Base_Code
+{
+    public class Input
+    {
+        //Handles the text input for Assessment 1
+        string sentence = "nothing";
+        public string manualTextInput()
+        {
+            Console.WriteLine("Please enter the  that you would like to be analysed: ");
+            sentence = Console.ReadLine();
+            return sentence;
+        }
+        public string fileTextUserInput(string fileName)
+
+        {
+            sentence = fileTextUserInput(fileName);
+            return sentence;
+        }
+
+    }
+
+}
+     
