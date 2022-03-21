@@ -12,79 +12,79 @@ namespace CMP1903M_Assessment_1_Base_Code
         {
             int character_count = 0;
             char[] characters = new char[52] { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" };
-            foreach (char x in userInput)
+            foreach (char x in userInput)     //These are values that will be to compare against userInput
             {
                 if (characters.Contains(x))
                 {
-                    character_count++;
+                    character_count++; //looks to find a match and if it does the counter is increased by 1
                 }
             }
             Console.WriteLine("The number of characters in this sentence is: ");
-            Console.WriteLine(character_count);
+            Console.WriteLine(character_count); //This ouput is able to give the user the results for the number of characters in their text
 
         }
         public void vowels_counted(string userInput)
         {
             int vowel_counted = 0;
-            char vowels = new char[5] { 'a', 'e`, `i`, `o`,`u`};
+            char vowels = new char[5] { 'a', 'e`, `i`, `o`,`u`}; //These are values that will be to compare against userInput
                 foreach (char x in userInput)
             {
 
                 {
-                    vowel_counted++;
+                    vowel_counted++; //looks to find a match and if it does the counter is increased by 1
                 }
             }
             Console.WriteLine("the number of vowels in this sentence is: ");
-            Console.WriteLine(vowel_counted);
+            Console.WriteLine(vowel_counted); //This ouput is able to give the user the results for the number of vowels in their text
         }
         public void consonants_counted(string userInput)
         {
             int consonant_counted = 0;
-            char consonants = new char[21] { b`,`c`,`d`,`f`,`g`,`h`,`j`,`k`,`l`,`m`,`n`,`p`, q`,`r`,`s`,`t`,`v`,`x`,`z`,`w`,`y`};
+            char consonants = new char[21] { b`,`c`,`d`,`f`,`g`,`h`,`j`,`k`,`l`,`m`,`n`,`p`, q`,`r`,`s`,`t`,`v`,`x`,`z`,`w`,`y`}; //These are values that will be to compare against userInput
             foreach (char x in userInput)
             {
-                consonant_counted++;
+                consonant_counted++; //looks to find a match and if it does the counter is increased by 1
             }
 
             Console.WriteLine("the number of consonants in this sentence conatins: ");
-            Console.WriteLine(consonant_counted);
+            Console.WriteLine(consonant_counted); //This ouput is able to give the user the results for the number of consonants in their text
         
         }
         public void uppercase_letters_counted(string UserInput)
         {
             char uppercase_letter_counted = new char[26] { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" };
-            foreach (char x in UserInput)
+            foreach (char x in UserInput)                 //These are values that will be to compare against userInput
             {
-                uppercase_letter_counted++;
+                uppercase_letter_counted++; //looks to find a match and if it does the counter is increased by 1
 
             }
             Console.WriteLine("The number of uppercase letters in this program is: ");
-            Console.WriteLine(uppercase_letter_counted);
+            Console.WriteLine(uppercase_letter_counted); //This ouput is able to give the user the results for the number of uppercase letters in their text
 
         }
         public void lowercase_letters_counted(string userInput)
         {
             int lowercase_letter_counted = 0;
             char lowercase_letters = new char[26] { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" };
-            foreach (char x in userInput)
+            foreach (char x in userInput)          //These are values that will be to compare against userInput
 
             {
-                lowercase_letter_counted++;
+                lowercase_letter_counted++; //looks to find a match and if it does the counter is increased by 1
             }
             Console.WriteLine("the number of lowercase letters in this sentence is");
-            Console.WriteLine(lowercase_letter_counted);
+            Console.WriteLine(lowercase_letter_counted); //This ouput is able to give the user the results for the number of lowercase letters in their text
         }
         public void number_of_sentences_entered(string userInput)
         {
             int number_of_sentences_entered_by_user = 0;
-            char punctuation = new char[3] { "?", ".", "!" };
-            foreach (char x in userInput)
+            char punctuation = new char[3] { "?", ".", "!" }; //These are values that will be to compare against userInput
+            foreach (char x in userInput)   
             {
                 if (x == punctuation)
-                    number_of_sentences_entered_by_user++;
+                    number_of_sentences_entered_by_user++; //looks to find a match and if it does the counter is increased by 1
             }
             Console.WriteLine("The number of sentences in this text is: ");
-            Console.WriteLine(number_of_sentences_entered_by_user);
+            Console.WriteLine(number_of_sentences_entered_by_user); //This ouput is able to give the user the results for the number of sentences entered
         }
         public void letter_frequence(string userInput)
         {
